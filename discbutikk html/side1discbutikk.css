@@ -1,0 +1,137 @@
+:root {
+  --rawumber: #9e6240;
+  --buff: #dea47e;
+  --jasper: #cd4631;
+  --eggshell: #f8f2dc;
+  --carolinablue: #81adc8;
+}
+html {
+  background-color: var(--carolinablue);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.65fr 0.35fr repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 6;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 6;
+}
+.div3 {
+  grid-area: 3 / 1 / 6 / 2;
+}
+.div4 {
+  grid-area: 3 / 2 / 6 / 6;
+}
+.div1 {
+  background-color: var(--buff);
+}
+.div2 {
+  background-color: var(--rawumber);
+}
+.div3 {
+  background-color: var(--buff);
+}
+.div4 {
+  background-color: var(--eggshell);
+}
+
+.naviconparent {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.icnbtn {
+  background-color: var(--rawumber);
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.icnbtn:hover {
+  transform: translate(10px, 10px);
+}
+
+.parkedeaglelogoimg {
+  width: 250;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logohomepage {
+  display: flex;
+  justify-content: center;
+}
+.discbilderparent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.discbilder {
+  max-width: 200px;
+  max-height: 200px;
+  border: var(--rawumber);
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 5%;
+  margin-top: 5px;
+  background-color: var(--buff);
+}
+li {
+  list-style: none;
+}
+.disctall {
+  display: flex;
+  justify-content: center;
+}
+.disctallbox {
+  width: 36px;
+  height: 36px;
+  margin-top: 5px;
+}
+h4 {
+  text-align: center;
+  font-family: cursive;
+  margin-top: 6px;
+}
+.discnavnparent {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+.discpriceparent {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+.softlogic:hover {
+  border-color: var(--buff);
+}
+.hardtactic:hover {
+  border-color: var(--buff);
+}
+.softlink:hover {
+  border-color: var(--buff);
+}
+.sfd:hover {
+  border-color: var(--buff);
+}
+.neoparadigm:hover {
+  border-color: var(--buff);
+}
